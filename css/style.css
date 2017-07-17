@@ -1,6 +1,7 @@
 .container{
     width:100%;
     height: 100%;
+    position: relative;
 }
 .right_reg_box{
     width: 264px;
@@ -8,8 +9,8 @@
     right:0;
     top: 50%;
     position: fixed;
-    z-index: 999;
-
+    z-index: 998;
+    display: none;
 }
 .right_reg_box_top{
     width: 264px;
@@ -21,6 +22,7 @@
     height: 316px;
     background: url("../images/rightzc/lzcbgb.jpg") no-repeat;
     position: relative;
+
 }
 .right_reg_box_bottom form{
     width: 244px;
@@ -43,7 +45,44 @@
     text-align: center;
     margin-left: -10px;
 }
+#btn1_1{
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    background: url("../images/rightzc/lzc_btnn1.jpg") no-repeat;
 
+}
+#btn1_1:hover{
+    background: url("../images/rightzc/lzc_btnh1.jpg") no-repeat;
+}
+#btn1_2{
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    background: url("../images/rightzc/lzc_btnn2.jpg") no-repeat;
+
+}
+#btn1_2:hover{
+    background: url("../images/rightzc/lzc_btnh2.jpg") no-repeat;
+}
+.right_reg_close{
+    width: 30px;
+    height: 30px;
+    right:0;
+    top: 50%;
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+.right_reg_close a{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
 .right_reg{
     width: 39px;
     height: 149px;
@@ -51,7 +90,7 @@
     top: 50%;
     background: url("../images/kszc.gif") no-repeat;
     position: fixed;
-    z-index: 998;
+    z-index: 997;
 }
 .top{
     width: 100%;
@@ -121,13 +160,235 @@
     position: absolute;
     background: url("../images/logo.png") no-repeat;
 }
+
+
 .center{
     width: 100%;
     height: 700px;
     background-color: #DAE3DB;
 }
+
+.content{
+    width: 1000px;
+    height: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    top: 580px;
+    position: absolute;
+}
+
+
 .foot{
     width: 100%;
     height: 350px;
     background: url("../images/foot_bg.jpg") no-repeat right;
 }
+
+.foot_content{
+    width: 100%;
+    top: 1620px;
+    position: absolute;
+    text-align: center;
+}
+
+.foot_content a{
+    padding: 20px;
+    font-size: 1.2em;
+}
+.foot_content p{
+    padding: 5px;
+}
+
+/*Home-Css*/
+.home_container{
+    width: 1000px;
+    height: 1000px;
+}
+
+.home_left{
+    float: left;
+    width: 248px;
+    height: 1000px;
+
+}
+.q_reg{
+    width: 248px;
+    height: 60px;
+    background: url("../images/reg.jpg")no-repeat;
+    background-position: 0 0;
+    margin-top: 10px;
+}
+.q_reg:hover{
+    background-position: 0 -60px;
+}
+.q_track{
+    width: 248px;
+    height: 242px;
+    background: url("../images/fast_track.jpg")no-repeat;
+    margin-top: 10px;
+}
+.q_track span{
+    color: white;
+}
+.q_track_top{
+    float:left;/*当两个容器嵌套时,如果外层容器和内层容器之间没有别的元素,firefox会把内层元素的margin-top作用与父元素。*/
+    width: 226px;
+    height: 36px;
+    background: url("../images/menu_bg1.jpg")no-repeat;
+    margin: 11px;
+    line-height: 36px;
+    text-align: center;
+}
+.q_track_top span{
+    font-size: 1.5em;
+}
+.q_track_menu p{
+    margin-left: 11px;
+}
+.q_track_menu a{
+    color: white;
+    width: 102px;
+    height: 27px;
+    background: url("../images/menu_bg2.jpg")no-repeat;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+}
+.q_track_menu_a{
+    margin-right: 18px;
+}
+.q_track_menu a:hover{
+    text-decoration: underline;
+}
+.q_track_menu p{
+    padding-bottom: 8px;
+}
+.q_track_charts{
+    width: 248px;
+    height: 252px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.q_track_charts_top{
+    width: 248px;
+    height: 36px;
+    line-height: 36px;
+    background: url("../images/menu_bg3.jpg")no-repeat;
+}
+.q_track_charts_top span{
+    font-weight: bold;
+}
+.s1{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 20%;
+
+}
+.s2{
+    float: left;
+    width: 30%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+
+}
+.s3{
+    float: left;
+    width: 50%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.q_track_charts_content{
+    width: 248px;
+    height: 216px;
+}
+.q_track_charts_content_left{
+    width: 2px;
+    height: 216px;
+    background: url("../images/menu_bg4.jpg");
+    float: left;
+}
+.q_track_charts_content_right{
+    width: 246px;
+    height: 216px;
+    float: left;
+}
+.q_track_charts_content_right span{
+    color: black;
+}
+.share_li1{
+    background-color: #C0D4C4;
+    width: 248px;
+    height: 36px;
+
+}
+.q_track_charts_content_right_li1 span{
+    color: red;
+}
+.share_li2{
+    background-color: #A3C0AB;
+    width: 248px;
+    height: 36px;
+
+}
+.q_track_charts_content_right_li2 span{
+    color: orange;
+}
+
+.q_track_charts_content_right_li3 span{
+    color: #639DD5;
+}
+
+.s1_img{/*排名榜名次图片居中*/
+    line-height: 42px;
+}
+.game_service{
+    width: 248px;
+    height: 180px;
+    margin-top: 10px;
+    background-color: #A3C0AB;
+}
+.game_service_top{
+    width: 248px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+    background: url("../images/menu_bg3.jpg");
+}
+.game_service_top span{
+    font-size: 1.8em;
+}
+
+.game_service_tel{
+    text-align: center;
+}
+.game_service_tel p{
+    padding-bottom: 10px;
+    font-size: 1.4em;
+}
+.game_service_foot{
+    width:136px;
+    height: 40px;
+    background: url("../images/service_online.jpg");
+    background-position: 0 0;
+    margin-left: 56px;
+    margin-top: 10px;
+}
+.game_service_foot:hover{
+    background: url("../images/service_online.jpg");
+    background-position: 0 -40px;
+}
+
+.home_right{
+    float: left;
+    width: 746px;
+    margin-left: 6px;
+    height: 1000px;
+}
+
+
+
