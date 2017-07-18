@@ -5,19 +5,55 @@
     <!-- 样式 -->
     <link type="text/css" href="css/public_.css" rel="stylesheet" />
     <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <link type="text/css" href="css/lunbo.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <title>天龙游戏网站_HOME</title>
 
     <script>
         $(function(){
-            $(".right_reg").click(function(){
-                $(".right_reg_box").show();
-                $(".right_reg_close").show();
+            var oFocus=$('#focus'),
+                    oRight=oFocus.find('.right'),
+                    oLeft=oFocus.find('.left'),
+                    aRLi=oRight.find('li'),
+                    aLLi=oLeft.find('li'),
+                    index=0,
+                    timer = null;
+            aRLi.hover(function(){
+                index=$(this).index();
+                $(this).addClass('active').siblings().removeClass();
+               aLLi.eq(index).addClass('active').siblings().removeClass();
+                aLLi.eq(index).stop().animate({'opacity':1},300).siblings().stop().animate({'opacity':0},300);
+                $('.left_bottom_font').html($(this).text());
+                stopFoucs();
             });
-            $(".right_reg_close").click(function(){
-                $(".right_reg_box").hide();
-                $(".right_reg_close").hide();
+            aRLi.mouseleave(function(){
+                timer = setInterval(function(){
+                    startFocus();
+                },3000);
             });
+            oLeft.mouseenter(function(){
+                stopFoucs();
+            }).mouseleave(function(){
+                timer = setInterval(function(){
+                    startFocus();
+                },3000);
+            });
+            timer = setInterval(function(){
+                startFocus();
+            },3000);
+            function startFocus(){
+                index++;
+                index = index > aRLi.size()-1 ? 0 :index;
+
+                aLLi.eq(index).addClass('active').siblings().removeClass();
+                aLLi.eq(index).stop().animate({'opacity':1},300).siblings().stop().animate({'opacity':0},300);
+                aRLi.eq(index).addClass('active').siblings().removeClass();
+                $('.left_bottom_font').html(aRLi.eq(index).text());
+
+            }
+            function stopFoucs(){
+                clearInterval(timer);
+            }
         });
     </script>
 </head>
@@ -100,10 +136,29 @@
 
 
 
-
-
         <div class="home_right">
-
+            <div class="focus" id="focus">
+                <div class="left">
+                    <ul>
+                        <li class="active" style="opacity:1; filter:alpha(opacity=100);"><p>图一</p><img src="images/256.jpg" height="280px" width="586px"/></li>
+                        <li><p>图二</p><img src="images/270.jpg" height="280px" width="586px"/></li>
+                        <li><p>图三</p><img src="images/269.jpg" height="280px" width="586px"/></li>
+                        <li><p>图四</p><img src="images/272.jpg" height="280px" width="586px"/></li>
+                        <li><p>图四</p><img src="images/271.jpg" height="280px" width="586px"/></li>
+                    </ul>
+                    <div class="left_bottom"></div>
+                    <div class="left_bottom_font">紫金游欢迎您的体验</div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li class="active">紫金游欢迎您的体验</li>
+                        <li>大圣闹海之龙王现世</li>
+                        <li>李逵劈鱼，惊喜预售</li>
+                        <li>金鲨银鲨 大奖开不停</li>
+                        <li>安全性高、转化率高</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
