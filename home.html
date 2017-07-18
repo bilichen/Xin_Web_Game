@@ -11,6 +11,23 @@
 
     <script>
         $(function(){
+            $(".home_right_menu a").click(function(){
+                index = $(this).index();
+                if(index!=4){
+                    $(this).siblings().removeClass('home_right_menu_active').end().addClass('home_right_menu_active');
+                }
+               for(var i=0;i<4;i++){
+                    if(i==index){
+                        $(".home_right_menu1_"+i).show();
+                    }else{
+                        $(".home_right_menu1_"+i).hide();
+                    }
+               }
+
+            });
+        });
+
+        $(function(){
             var oFocus=$('#focus'),
                     oRight=oFocus.find('.right'),
                     oLeft=oFocus.find('.left'),
@@ -158,6 +175,211 @@
                         <li>安全性高、转化率高</li>
                     </ul>
                 </div>
+            </div>
+
+            <div style="clear: both"></div>
+
+            <div class="home_right_menu">
+                <a class="home_right_menu_active" href="javascript:;">最新</a><a href="javascript:;">新闻</a><a href="javascript:;">公告</a><a href="javascript:;">活动</a>
+                <a id="home_right_menu_a_more" href="javascript:;">更多>></a>
+            </div>
+            <div style="clear: both"></div>
+
+            <div class="home_right_menu_content">
+                <div class="home_right_menu1_0 menu">
+                    <div class="home_right_menu1_content1">
+                        <img src="images/267.jpg">
+                        <div>
+                            <a href="####">紫金游全新版本正式发布</a>
+                            <p>紫金游团队致力于打造最专业的棋牌游戏平台，我们将根据产品现状及市场动态定期对版本进行迭代升级。本次版本涉及更新内容如下：</p>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <div class="home_right_menu1_content2">
+                        <ul>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">每日免费充值卡赠送</a><span class="date">04-03</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">金鲨银鲨火爆上线</a><span class="date">01-12</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游演示平台玩家QQ群</a><span class="date">03-01</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">新增游戏ATT连环炮、大圣闹海</a><span class="date">01-12</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">游戏建议征集(大厅右上角)</a><span class="date">02-07</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">头奖500W！幸运扑克系统即将上线</a><span class="date">10-23</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">新年行大运，紫金游上拜财神</a><span class="date">01-26</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">紫金游1.5版本更新至1.6</a><span class="date">01-12</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home_right_menu1_1 menu">
+                    <div class="home_right_menu1_content1">
+                        <img src="images/268.jpg">
+                        <div>
+                            <a href="####">紫金游平台 8招打造最稳定棋牌投资项目</a>
+                            <p>紫金游的游戏平台，以稳定的运营性能、丰富的盈利点赢得了棋牌投资者的关注。与其他常见的棋牌产品相比，紫金游这款专门为地方棋牌运营商打造的运营级产品拥有8大优势</p>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <div class="home_right_menu1_content2">
+                        <ul>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游平台 8招打造最稳定棋牌投资项..</a><span class="date">01-02</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">游戏盈利的关键：如何促进虚拟游戏币的...</a><span class="date">05-12</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">像做团购一样推广棋牌游戏</a><span class="date">07-02</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">网络游戏推广：得屌丝者得天下</a><span class="date">06-22</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">游戏推广三大法宝：视频、新闻、病毒营...</a><span class="date">12-27</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">在当前市场环境下，棋牌游戏运营还有机...</a><span class="date">11-13</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">5个小技巧让你的新游戏避免失败</a><span class="date">05-12</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">一个棋牌创业者的自述</a><span class="date">09-16</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home_right_menu1_2 menu">
+                    <div class="home_right_menu1_content1">
+                        <img src="images/267.jpg">
+                        <div>
+                            <a href="####">紫金游全新版本正式发布</a>
+                            <p>紫金游的游戏平台，以稳定的运营性能、丰富的盈利点赢得了棋牌投资者的关注。与其他常见的棋牌产品相比，紫金游这款专门为地方棋牌运营商打造的运营级产品拥有8大优势</p>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <div class="home_right_menu1_content2">
+                        <ul>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游全新版本正式发布</a><span class="date">01-02</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">紫金游1.3版本更新至1.4</a><span class="date">05-12</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游1.5版本更新至1.6</a><span class="date">07-02</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">紫金游1.2版本更新至1.3</a><span class="date">06-22</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游1.4版本更新至1.5</a><span class="date">12-27</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">棋牌游戏推广：掌握网民上网规律和时段</a><span class="date">11-13</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游演示平台免责公告</a><span class="date">05-12</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">最省钱的棋牌推广方法——SEO</a><span class="date">09-16</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home_right_menu1_3 menu">
+                    <div class="home_right_menu1_content1">
+                        <img src="images/266.jpg">
+                        <div>
+                            <a href="####">紫金游平台 8招打造最稳定棋牌投资项目</a>
+                            <p>紫金游面世不久，便已名声大噪，紫金游的第二家运营商—“紫金阁”首日上线就有千元充值。快速的盈利能力可以让运营商看到希望，加快资金流转，帮助运营商走的更稳更远。</p>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <div class="home_right_menu1_content2">
+                        <ul>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游平台 8招打造最稳定棋牌投资项..</a><span class="date">01-02</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">新年行大运，紫金游上拜财神</a><span class="date">05-12</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">每日免费充值卡赠送</a><span class="date">07-02</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">金鲨银鲨火爆上线</a><span class="date">06-22</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">紫金游演示平台玩家QQ群</a><span class="date">12-27</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">新增游戏ATT连环炮、大圣闹海</a><span class="date">11-13</span>
+                            </li>
+                            <li class="home_right_menu1_content2_li1">
+                                <span>[最新] </span><a href="####">游戏建议征集(大厅右上角)</a><span class="date">05-12</span>
+                            </li>
+                            <li>
+                                <span>[最新] </span><a href="####">头奖500W！幸运扑克系统即将上线</a><span class="date">09-16</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="clear: both"></div>
+
+            <div class="home_right_menu2"><span>精品游戏推荐</span></div>
+            <div class="home_right_menu3">
+                <div class="img">
+                    <img src="images/260.png">
+                </div>
+                <div class="img">
+                    <img src="images/136.jpg">
+                </div>
+                <div class="img">
+                    <img src="images/258.png">
+                </div>
+            </div>
+            <div style="clear: both"></div>
+
+            <div class="home_right_menu4"><span>热门兑换奖品</span></div>
+            <div class="home_right_menu5">
+                <div class="img_gift">
+                    <img src="images/PictureHandler.jpg">
+                    <div class="img_dsc"><a href="####">泰迪熊毛绒玩具</a></div>
+                </div>
+                <div class="img_gift">
+                    <img src="images/PictureHandler.jpg">
+                    <div class="img_dsc"><a href="####">泰迪熊毛绒玩具</a></div>
+                </div>
+                <div class="img_gift">
+                    <img src="images/PictureHandler.jpg">
+                    <div class="img_dsc"><a href="####">泰迪熊毛绒玩具</a></div>
+                </div>
+                <div class="img_gift">
+                    <img src="images/PictureHandler.jpg">
+                    <div class="img_dsc"><a href="####">泰迪熊毛绒玩具</a></div>
+                </div>
+
+
             </div>
         </div>
     </div>

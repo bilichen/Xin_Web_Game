@@ -1,5 +1,5 @@
 @charset "utf-8";
-html{background:#fff;overflow:auto;}
+html{overflow:auto;}
 body{min-width:1200px;font:12px/18px "Microsoft Yahei";font-weight:lighter;color:#333; -webkit-font-smoothing: antialiased;background:#0f0; background-color:transparent;}
 a{color:#333; text-decoration:none; cursor:pointer; outline: 0 none;}
 a:hover{ text-decoration:none;color:#ff4f20;}
