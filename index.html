@@ -5,7 +5,7 @@
     <!-- 样式 -->
     <link type="text/css" href="css/public_.css" rel="stylesheet" />
     <link type="text/css" href="css/style.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <title>天龙游戏网站</title>
 
     <script>
@@ -17,6 +17,11 @@
             $(".right_reg_close").click(function(){
                 $(".right_reg_box").hide();
                 $(".right_reg_close").hide();
+            });
+//            首页menu切换item
+            $('.top_menu ul').on('click', 'li', function(){
+                $(this).siblings().removeClass('top_menu_li_select').end().addClass('top_menu_li_select');
+                $('#iframe').attr('src', $(this).attr('data-src'));
             });
         });
     </script>
@@ -50,12 +55,12 @@
             <div class="top_menu">
                 <ul class="top_menu_left">
                     <li class="top_menu_li_select">
-                        <a href="####">官网首页</a>
+                        <a href="index.html">官网首页</a>
                         <br/>
                         <span>HOME</span>
                     </li>
-                    <li>
-                        <a href="####">下载中心</a>
+                    <li data-src="down.html">
+                        <a href="javascript:;">下载中心</a>
                         <br/>
                         <span>DOWNLOAD</span>
                     </li>
@@ -64,9 +69,7 @@
                         <br/>
                         <span>ACCOUNT SERVICES</span>
                     </li>
-                </ul>
-                <ul class="top_menu_right">
-                    <li>
+                    <li class="top_menu_li_right">
                         <a href="####">奖品乐园</a>
                         <br/>
                         <span>PRIZES PARADISE</span>
@@ -104,5 +107,6 @@
         </div>
 
     </div>
+
 </body>
 </html>
