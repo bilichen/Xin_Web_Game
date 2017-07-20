@@ -22,6 +22,7 @@
             $('.top_menu ul').on('click', 'li', function(){
                 $(this).siblings().removeClass('top_menu_li_select').end().addClass('top_menu_li_select');
                 $('#iframe').attr('src', $(this).attr('data-src'));
+
             });
         });
     </script>
@@ -69,21 +70,23 @@
                         <br/>
                         <span>ACCOUNT SERVICES</span>
                     </li>
-                    <li class="top_menu_li_right">
-                        <a href="####">奖品乐园</a>
+                    <li class="top_menu_li_right" data-src="news.html">
+                        <a href="####">新闻动态</a>
                         <br/>
-                        <span>PRIZES PARADISE</span>
+                        <span>NEWS</span>
                     </li>
+
                     <li>
                         <a href="####">道具商城</a>
                         <br/>
                         <span>ITEM SHOP</span>
                     </li>
                     <li>
-                        <a href="####">新闻动态</a>
+                        <a href="####">奖品乐园</a>
                         <br/>
-                        <span>NEWS</span>
+                        <span>PRIZES PARADISE</span>
                     </li>
+
                 </ul>
 
             </div>

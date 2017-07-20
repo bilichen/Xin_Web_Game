@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 样式 -->
+    <link type="text/css" href="css/public_.css" rel="stylesheet"/>
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <link type="text/css" href="css/lunbo.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <title>天龙游戏网站_MALL</title>
+
+    <script>
+        $(function(){
+//            首页menu切换item
+//            $('.home_right_mall_content ul li ').on('click', 'a', function(){
+//                alert($(this).index());
+//            });
+            $(".home_right_mall_content_li_btn2 a").click(function(){
+
+                if("mall_li1"==$(this).attr("id")){
+                    $(".mall_my_images img").attr('src',"images/0035.png");
+                }
+                if("mall_li2"==$(this).attr("id")){
+                    $(".mall_my_images").css("background-image","url(images/0050.png)");
+                }
+
+            });
+
+        });
+    </script>
+
+</head>
+<body class="home_body" style="min-width: 1010px">
+<div class="home_container">
+    <div class="home_left">
+        <img src="images/down_load.jpg" width="100%">
+        <div class="q_reg"></div>
+        <div class="mall_record">
+            <div class="pay_record_title">
+                <a href="#">登录后</a>
+                <span>获取</span>
+            </div>
+            <div class="mall_my_images">
+                <img src="images/1.png">
+            </div>
+            <div class="pay_record_item">
+                <img src="images/mall_icon2.png" width="25" height="21">
+                <span>&nbsp&nbsp乐豆：</span>
+                <a href="#">登录后</a>
+                <span>获取</span>
+            </div>
+            <div class="pay_record_item">
+                <img src="images/mall_icon1.png" width="25" height="21">
+                <span>&nbsp&nbsp元宝：</span>
+                <a href="#">登录后</a>
+                <span>获取</span>
+            </div>
+            <div class="pay_record_item">
+                <img src="images/mall_icon3.png" width="25" height="21">
+                <span>&nbsp&nbsp奖券：</span>
+                <a href="#">登录后</a>
+                <span>获取</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="home_right border">
+        <div class="home_right_top">
+            <img src="images/mall_icon.PNG"/>
+            <div class="home_right_top_div1">道具商城</div>
+            <div class="home_right_top_div2">您所在位置：<a href="#">首页</a> >道具商城</div>
+        </div>
+        <div style="clear: both"></div>
+
+        <div class="home_right_news_menu">
+            <ul>
+                <li class="home_right_news_menu_select"><a href="#">全部</a></li>
+                <li><a href="#">形象</a></li>
+                <li><a href="#">背景</a></li>
+                <li><a href="#">道具</a></li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+
+        <div class="home_right_mall_content">
+            <ul>
+                <li class="home_right_mall_content_li" >
+                    <div  class="home_right_mall_content_li_img"><img src="images/0035.png"></div>
+                    <div class="home_right_mall_content_li_box">
+                        <p><span>文艺青年</span></p>
+                        <p>价格：100 乐豆</p>
+                        <p>文艺青年</p>
+                        <div class="home_right_mall_content_li_btn">
+                            <div class="home_right_mall_content_li_btn1"><a>购买</a></div>
+                            <div class="home_right_mall_content_li_btn2" ><a id="mall_li1" href="javascript:;">试穿</a></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="home_right_mall_content_li" >
+                    <div  class="home_right_mall_content_li_img"><img src="images/0050.png"></div>
+                    <div class="home_right_mall_content_li_box">
+                        <p><span>罗马街景</span></p>
+                        <p>价格：1000 元宝</p>
+                        <p>罗马街景</p>
+                        <div class="home_right_mall_content_li_btn">
+                            <div class="home_right_mall_content_li_btn1"><a>购买</a></div>
+                            <div class="home_right_mall_content_li_btn2" ><a id="mall_li2" href="javascript:;">试穿</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="home_right_mall_content_li">
+                    <div  class="home_right_mall_content_li_img"><img src="images/0049.png"></div>
+                    <div class="home_right_mall_content_li_box">
+                        <p><span>北欧雪景</span></p>
+                        <p>价格：500 元宝</p>
+                        <p>北欧雪景</p>
+                        <div class="home_right_mall_content_li_btn">
+                            <div class="home_right_mall_content_li_btn1"><a>购买</a></div>
+                            <div class="home_right_mall_content_li_btn2" ><a id="mall_li3" href="javascript:;">试穿</a></div>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
