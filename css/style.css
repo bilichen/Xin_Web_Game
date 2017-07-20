@@ -163,7 +163,7 @@
 }
 
 .content{
-    width: 1000px;
+    width: 1010px;
     height: 1050px;
     left: 50%;
     margin-left: -500px;
@@ -195,7 +195,7 @@
 
 /*Home-Css*/
 .home_container{
-    width: 1000px;
+    width: 1010px;
     height: 1050px;
 }
 
@@ -387,6 +387,11 @@
     margin-left: 6px;
     height: 1050px;
 }
+.border{
+    border:1px solid #89ABB1;
+    width: 746px;
+    height: 1000px;
+}
 
 .home_right_menu{
     width: 746px;
@@ -542,35 +547,36 @@
 }
 
 /*down-css*/
-.home_right_down_top{
+.home_right_top{
     width: 746px;
     height: 45px;
     background:url("../images/menu_bg5.jpg") no-repeat;
     line-height:45px;
 }
-.home_right_down_top img{
+.home_right_top img{
     margin-top: 10px;
     margin-left: 10px;
     float:left;
 }
-.home_right_down_top_div1{
+.home_right_top_div1{
     float:left;
     font-size: 1.5em;
     color: white;
     margin-left: 10px;
 }
-.home_right_down_top_div2{
+.home_right_top_div2{
     float:right;
     color: white;
     font-size: 1.2em;
     margin-right: 20px;
 }
-.home_right_down_top_div2 a{
+.home_right_top_div2 a{
     color: white;
 }
-.home_right_down_top_div2 a:hover{
+.home_right_top_div2 a:hover{
     text-decoration: underline;
 }
+
 .home_right_down_content{
     width: 746px;
     height: 420px;
@@ -729,4 +735,121 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
+}
+.pay_help{
+    height: 130px;
+    width: 248px;
+    margin-top: 10px;
+    background-color: #A3C0AB;
+}
+.pay_pay_item{
+    margin-left: 20px;
+}
+.pay_pay_item1{
+    margin-top: 10px;
+}
+.pay_pay_item a{
+    font-size: 1.2em;
+}
+.pay_help hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    border: 1px dashed #659E90;
+}
+.home_right_pay_content1{
+    width: 746px;
+    height: 170px;
+    background-color: #B6CBC6;
+}
+.home_right_pay_content1_box{
+    padding: 20px;
+}
+.home_right_pay_content1_box strong{
+    font-size: 1.5em;
+    color: #16555E;
+}
+.home_right_pay_content1_box_img{
+    width: 674px;
+    height: 37px;
+    background: url("../images/process_btn.jpg");
+    background-position: 0 0;
+    margin-top: 20px;
+}
+.home_right_pay_content1_box p{
+   margin-top: 20px;
+    font-size: 1.2em;
+}
+.home_right_pay_content1_box span{
+    color:red;.
+    font-size: 1.2em;
+}
+
+
+.home_right_pay_content2{
+    width: 746px;
+    height: 785px;
+    background-color: #E0EBE0;
+
+}
+.home_right_pay_content2 ul{
+    padding: 20px;
+}
+.home_right_pay_content2 li{
+    width: 700px;
+    height: 120px;
+    border:1px solid #89ABB1;
+    margin-top: 10px;
+}
+.home_right_pay_content2 li div{
+    float: left;
+}
+.home_right_pay_content2_li_left{
+    width: 20%;
+    height: 120px;
+    margin-left: 10px;
+    text-align: center;
+}
+.img2 img{
+    margin-top: 30px;
+}
+.home_right_pay_content2_li_left_line{
+    width: 1px;
+    height: 100px;
+    background: url("../images/top_bg.gif");
+    margin-top: 10px;
+}
+.home_right_pay_content2_li_center{
+    width: 55%;
+    height: 110px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.home_right_pay_content2_li_center span{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.home_right_pay_content2_li_center p{
+    margin-top: 5px;
+    line-height:22px;
+}
+.home_right_pay_content2_li_right{
+    width: 15%;
+    height: 120px;
+}
+.home_right_pay_content2_li_btn{
+    width: 96px;
+    height: 35px;
+    background: url("../images/pay_btn.png");
+    background-position: 0 0;
+    margin-top: 35px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.home_right_pay_content2_li_btn:hover{
+    background-position: 0 -35px;
 }
